@@ -19,7 +19,7 @@ class ViewTimeout {
   }
 
   run(lovelace = this.main.querySelector("ha-panel-lovelace")) {
-    if (this.queryString("disable_timeout") || !lovelace) {
+    if (this.queryString(["disable_timeout", "edit=1"]) || !lovelace) {
       return;
     }
     this.getConfig(lovelace);
