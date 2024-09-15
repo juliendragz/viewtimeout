@@ -15,10 +15,6 @@ type: Dashboard
 * Search: viewtimeout 
 and download
 
-## Update 
-
-* add: "edit=1" in url disable default 
-
 ## Important Info
 
 * If you need to disable the timeout feature temporarily, add `?disable_timeout` to the end of your
