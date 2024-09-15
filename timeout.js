@@ -177,6 +177,13 @@ class ViewTimeout {
 
   // activates or deactivates the countdown depending on the different settings
   urlChecker() {
+    // Check if the current URL contains "edit=1"
+    if (window.location.search.includes("edit=1")) {
+      if (this.viewTimeout) {
+        this.cancelEverything();
+      }
+      return;
+    }
     // if the current view is not the default view, or if this view has destination "false" (false disables redirection to the default)
     const isTargetedView = this.homeView === this.urlGetView() || this.getTarget(this.urlGetView()) === false;
     // if the variable "in_lovelace" is "false" (therefore the redirection works in any Home Assistant) or that we are in the lovelace dashboard
