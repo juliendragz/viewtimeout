@@ -7,6 +7,18 @@ timeout [Home Assistant](https://www.home-assistant.io/)
 
 ![image](img1.gif)
 
+## Installation hacs
+instructions https://www.hacs.xyz/docs/use/repositories/dashboard/#using-the-hacs-menu
+* Add custom repositories.
+repository: [url](https://github.com/BWilky/viewtimeout)
+type: Dashboard
+* Search: viewtimeout 
+and download
+
+## Update 
+
+* add: "edit=1" in url disable default 
+
 ## Important Info
 
 * If you need to disable the timeout feature temporarily, add `?disable_timeout` to the end of your
